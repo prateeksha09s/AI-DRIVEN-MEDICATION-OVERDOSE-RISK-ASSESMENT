@@ -345,3 +345,6 @@ if st.session_state.get('logged_in', False):
         st.write('Risk probabilities for each category:')
         for i, risk in enumerate(risk_labels):
             st.write(f"{risk}: {prediction[0][i] * 100:.1f}%")
+
+        if __name__ == "__main__":
+            app.run(host="0.0.0.0", port=10000)
